@@ -65,10 +65,10 @@ body {
 
 @keyframes four {
   from {
-    filter: blur(0px);
+    filter: contrast(250%);
   }
   to {
-    filter: blur(30px);
+    filter: contrast(90%);
   }
 }
 
@@ -119,18 +119,250 @@ body {
 
 @keyframes seven {
   0% {
-    transform: translate( 0px, 0px);
+    transform: translate(0px, 0px);
   }
   30% {
     background-color: green;
     transform: translate(0px, -100px);
   }
   60% {
-      background-color: yellow;
+    background-color: yellow;
     transform: translate(0px, 100px);
   }
   100% {
-      background-color: azure;
+    background-color: azure;
     transform: translate(0px, 0px);
+  }
+}
+
+.eight img {
+  width: 25vw;
+  height: 50vh;
+  animation-name: eight;
+  animation-duration: 5s;
+}
+
+@keyframes eight {
+  0% {
+    filter: drop-shadow(15px 0px 0px);
+  }
+  50% {
+    filter: drop-shadow(0px 5px 22px yellow);
+  }
+  100% {
+    filter: drop-shadow(15px 5px 0px);
+  }
+}
+.nine img {
+  width: 50vw;
+  height: 70vh;
+  animation-name: nine;
+  animation-duration: 3s;
+}
+@keyframes nine {
+  0% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(100px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.ten img {
+  width: 20vw;
+  height: 55vh;
+  cursor: pointer;
+}
+
+.ten img:hover {
+  animation-name: ten;
+  animation-duration: 9s;
+}
+
+@keyframes ten {
+  1% {
+    filter: saturate(0%);
+    filter: drop-shadow(0px 0px 50px yellow);
+  }
+  30% {
+    filter: saturate(60%);
+    filter: drop-shadow(0px 0px 50px grey);
+  }
+  50% {
+    filter: saturate(100%);
+    filter: drop-shadow(0px 0px 50px green);
+  }
+  65% {
+    filter: saturate(170%);
+    filter: drop-shadow(0px 0px 50px yellow);
+    transform: translateX(500px);
+  }
+  85% {
+    filter: saturate(210%);
+    filter: drop-shadow(0px 0px 100px blue);
+    transform: translateX(-750px);
+
+    transform: rotateY(720deg);
+  }
+  95% {
+    filter: saturate(310%);
+    filter: drop-shadow(0px 0px 100px azure);
+    transform: translateX(1000px);
+  }
+  100% {
+    filter: saturate(400%);
+    filter: drop-shadow(0px 0px 100px yellow);
+    transform: translateX(100px);
+  }
+}
+
+.eleven {
+  background-color: blue;
+  width: 30px;
+  height: 150px;
+  animation-name: eleven;
+  animation-duration: 5s;
+}
+
+@keyframes eleven {
+  from {
+    width: 60px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+.twelve {
+  background-color: blanchedalmond;
+  width: 10px;
+  height: 150px;
+  animation-name: twelve;
+  animation-duration: 5s;
+}
+
+@keyframes twelve {
+  25% {
+    width: 70px;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+.thirteen img {
+  width: 300px;
+  height: 300px;
+  animation-name: thirteen;
+  animation-duration: 5s;
+}
+
+@keyframes thirteen {
+  from {
+    filter: brightness(0%);
+  }
+  to {
+    filter: brightness(100%);
+  }
+}
+
+.fourteen img {
+  width: 100px;
+  height: 100px;
+  animation-name: fourteen;
+  animation-duration: 5s;
+}
+
+@keyframes fourteen {
+  from {
+    width: 300px;
+    height: 300px;
+  }
+  to {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.fifteen img {
+  width: 450px;
+  height: 400px;
+  animation-name: fifteen;
+  animation-duration: 5s;
+}
+
+@keyframes fifteen {
+  from {
+    filter: grayscale(100%) contrast(2);
+  }
+  on {
+    filter: sepia(0%) contrast(0);
+  }
+}
+
+.sixteen {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  animation-name: sixteen;
+  animation-duration: 5s;
+}
+
+@keyframes sixteen {
+  25% {
+    width: 350px;
+    height: 350px;
+    transform: translateX(500px);
+  }
+  50% {
+    width: 550px;
+    height: 550px;
+    transform: translateX(500px);
+  }
+  100% {
+    width: 550px;
+    height: 550px;
+    transform: translateX(0px);
+  }
+}
+
+.seventeen {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  animation-name: seventeen;
+  animation-duration: 7s;
+}
+
+@keyframes seventeen {
+  5% {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translateY(500px);
+  }
+  30% {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translateY(-500px);
+  }
+  60% {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translateY(500px);
+  }
+  100% {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translateY(-500px);
   }
 }
